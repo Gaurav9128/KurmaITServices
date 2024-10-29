@@ -166,16 +166,16 @@ body.nav-active { overflow: hidden; }
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 16px; }
+.container { padding-inline: 25px; }
 
 .social-list {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
 }
 
 .social-link {
-  font-size: 2rem;
+  font-size: 4rem;
   transition: var(--transition-1);
 }
 
@@ -326,6 +326,20 @@ body.nav-active { overflow: hidden; }
   transition: var(--transition-3);
 }
 
+.navbar {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.hero {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.hero {
+  padding-top: 60px; /* Adjust according to navbar height */
+}
+
 .navbar.active {
   visibility: visible;
   transform: translateX(300px);
@@ -398,7 +412,7 @@ body.nav-active { overflow: hidden; }
 .h1.hero-title {
   font-size: 5rem; /* Adjust the size for the heading */
   margin-bottom: 15px; /* Space below the title */
-  color: gold;
+  color: #228DF7;
 }
 
 h2 {
@@ -439,6 +453,23 @@ h2 {
   background: transparent;
 }
 
+/* Ensure no margin/padding at the top of the hero section */
+.section.hero {
+  margin-top: 95px;
+  padding-top: 0;
+}
+
+/* Adjust if navbar is fixed */
+.navbar {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 300px;
+}
+
+/* Add padding to prevent content overlap if navbar is fixed */
+.section.hero {
+  padding-top: 60px; /* Adjust based on navbar height */
+}
 
 
 /*-----------------------------------*\
@@ -467,9 +498,33 @@ h2 {
   margin-inline: auto;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontally center the image */
+}
+
+.form-image {
+  width: 35%; /* Set width to 100% of the container, or adjust */
+  max-width: 300px; /* Optional: Limit maximum width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure block display to center correctly */
+  margin: 0 auto; /* Center the image */
+}
+
+
 .service-card .card-icon ion-icon { --ionicon-stroke-width: 50px; }
 
 .service-card .card-title { margin-block: 16px 10px; }
+
+.card-title {
+  color: black; /* Set the color of the h3 title to black */
+}
+
+.card-text {
+  color: black; /* Set the color of the paragraph text to black */
+}
+
 
 .service-card .btn-text {
   display: flex;
@@ -477,7 +532,7 @@ h2 {
   align-items: center;
   gap: 4px;
   margin-block-start: 10px;
-  color: var(--violet-blue-crayola);
+  color: #007BFF;
   font-weight: var(--fw-700);
   transition: var(--transition-1);
 }
@@ -523,7 +578,18 @@ h2 {
 }
 
 
+#service-label {
+  font-size: 28px; /* Increase the font size */
+  font-weight: bold; /* Optionally make it bold */
+  margin-bottom: 20px; /* Add space below the text */
+  color:#007BFF;
+}
 
+.h2.section-title {
+  font-size: 24px; /* Decrease the font size */
+  font-weight: normal; /* Optionally adjust the weight */
+  margin-bottom: 20px; /* Add space below (optional) */
+}
 
 
 
@@ -538,11 +604,78 @@ h2 {
   align-items: center; /* Horizontally center content */
   text-align: center; /* Center the text */
   gap: 70px;
-  height: 70vh; /* Full viewport height */
+  height: auto; /* Full viewport height */
+  padding: 80px;
+  color: black;
+}
+
+#about-label {
+  font-size: 28px; /* Increase the font size */
+  font-weight: bold; /* Optionally make it bold */
+  margin-bottom: 20px; /* Add space below the text */
+  color:#007BFF;
+}
+#about-labe {
+  text-align: center; /* Center the text horizontally */
+  display: block; /* Ensure it behaves like a block element */
+  margin: 0 auto;
+  color:#007BFF;
+  font-size: 40px; /* Add auto margins to center the block */
+}
+.accordion-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  outline: none;
+  width: 100%; /* Ensures the button takes full width */
+  text-align: center; /* Aligns text to the left */
+}
+
+.down {
+  margin-right: 5px;
+  transition: transform 0.3s; /* Optional: rotate effect */
+}
+
+.down.active {
+  transform: rotate(180deg); /* Rotate the icon when active */
+}
+
+.image-container {
+  padding-left: 10px; /* Optional: Padding to align the image below the button */
+  margin-top: 10px; /* Space between the button and image */
+  transition: max-height 0.3s ease-in-out; /* Smooth transition */
 }
 
 
-.about .section-title { margin-block-end: 35px; }
+.h2.section-titl {
+  font-size: 20px; /* Decrease the font size */
+  font-weight: normal; /* Optionally adjust the weight */
+  margin-bottom: 20px; /* Add space below (optional) */
+}
+
+.about p {
+  max-width: 900px; /* Limit the width for better readability */
+  line-height: 2; /* Add line height for better spacing */
+}
+
+.about .section-subtitle {
+  font-size: xx-large;
+  margin-bottom: 20px;
+ 
+}
+#about-labe {
+  margin-top: 0; /* Removes any top margin */
+  padding-top: 0; /* Removes any top padding */
+}
+
+/* Also check the section container above if any */
+.section-container {
+  margin-bottom: 0; /* Removes any margin at the bottom */
+  padding-bottom: 0; /* Removes any padding at the bottom */
+}
 
 .accordion-card .card-title { padding-block-end: 20px; }
 
@@ -673,7 +806,8 @@ h2 {
   justify-content: center; /* Centers the mission and vision boxes horizontally */
   align-items: center; /* Aligns items vertically centered */
   text-align: center;
-  margin-top: 30px; /* Adds space between the contact button and the boxes */
+  margin-top: 10px; /* Adds space between the contact button and the boxes */
+  color: black;
 }
 
 /* Individual Box Styles */
@@ -685,6 +819,7 @@ h2 {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
   background-color: #fff; /* Background color */
+  color: black;
 }
 
 /* Hover Effect */
@@ -696,7 +831,7 @@ h2 {
 /* Heading Styles */
 .mission h4, .vision h4 {
   font-size: 24px;
-  color: #333; /* Dark gray color */
+  color: #000000; /* Dark gray color */
   margin-bottom: 15px;
   position: relative;
 }
@@ -704,7 +839,7 @@ h2 {
 /* Paragraph Styles */
 .mission p, .vision p {
   font-size: 16px;
-  color: #666; /* Medium gray color */
+  color: #000000; /* Medium gray color */
   line-height: 1.6; /* Comfortable line height */
 }
 
@@ -767,7 +902,19 @@ h2 {
   margin-bottom: 10px;
 }
 
+#feautre-label{
+  font-size: 36px; /* Increase the font size */
+  font-weight: bold; /* Optionally make it bold */
+  margin-bottom: 20px;
+  color: #007BFF;
+}
 
+.h2.section-tit {
+  font-size: 20px; /* Decrease the font size */
+  font-weight: normal; /* Optionally adjust the weight */
+  margin-bottom: 20px; /* Add space below (optional) */
+  color: #000000;
+}
 
 
 
@@ -801,34 +948,49 @@ h2 {
 
 .project :is(.section-subtitle, .section-title) { text-align: center; }
 
-.project .section-title { margin-block-end: 50px; }
+.project .section-title { margin-block-end: 20px; }
 
 .project-card {
   background-color: var(--white);
   border-radius: var(--radius-8);
   overflow: hidden;
   box-shadow: var(--shadow-2);
-  height: 30%;
+  height: 20%;
 }
 
-.project-card .card-content { padding: 30px; }
+.clients-container {
+  display: flex;
+  justify-content: center; /* Align the items in the center of the container */
+  align-items: center; /* Center the items vertically */
+  gap: 20px; /* Optional: Adds space between the client logos */
+  flex-wrap: nowrap; /* Ensure no wrapping occurs */
+}
+
+.client-logo {
+  padding: 10px; /* Add some padding around the logos if needed */
+  background-color: #fff; /* Keep a white background to make them stand out */
+  border-radius: 10px; /* Optional: Rounding the corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Adding a shadow */
+}
+
+.project-card .card-content { padding: 20px; }
 
 .project-card .card-title { transition: var(--transition-1); }
 
 .project-card .card-title:is(:hover, :focus-visible) { color: var(--violet-blue-crayola); }
 
-.project-card .card-text { margin-block: 16px 20px; }
+.project-card .card-text { margin-block: 14px 16px; }
 
 .project-card .card-meta-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 8px;
 }
 
 .project-card .card-meta-item {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 1px;
   color: var(--cadet-blue-crayola);
   font-size: var(--fs-8);
 }
@@ -849,7 +1011,16 @@ h2 {
   height: 100%;            /* Adjust height as needed */
 }
 
+.h2.section-ti {
+  font-size: 24px; /* Decrease the font size */
+  font-weight: normal; /* Optionally adjust the weight */
+  margin-bottom: 20px; /* Add space below (optional) */
+  color: #007BFF;
+  text-align: center;
 
+}
+
+/* New CSS Code */
 
 
 /*-----------------------------------*\
@@ -882,19 +1053,61 @@ h2 {
   #FOOTER
 \*-----------------------------------*/
 
+
+
 .footer {
+  display: flex;
+  justify-content: space-around; /* Distribute the sections evenly */
+  align-items: center; /* Vertically align the sections */
   background-color: #021526;
-  padding-block: 60px 100px;
-  color:  #E2E296;
+  padding-block: 60px 80px;
+  color: #E2E296;
 }
 
-.footer-brand .footer-text { margin-block: 20px; }
+.footer-brand {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the social icons horizontally */
+  justify-content: flex-end; /* Push social icons towards the bottom */
+}
 
-.footer .social-list { color: var(--white); }
+.footer-text {
+  margin-bottom: 20px; /* Adjust space between text and social icons */
+}
+
+.social-list {
+  display: flex;
+  justify-content: center; /* Centers the icons */
+  margin-top: 20px; /* Adds some space between the text and icons */
+}
+
+.social-list img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; /* Space between icons */
+}
+
+.footer-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.footer-text {
+  margin-block: 10px;
+}
+
+.footer .social-list {
+  color: var(--white);
+}
 
 .footer-list-title {
   color: var(--white);
-  margin-block-end: 16px;
+  margin-block-end: 12px;
 }
 
 .footer-link {
@@ -902,7 +1115,9 @@ h2 {
   transition: var(--transition-1);
 }
 
-.footer-link:is(:hover, :focus-visible) { color: var(--violet-blue-crayola); }
+.footer-link:is(:hover, :focus-visible) {
+  color: var(--violet-blue-crayola);
+}
 
 .input-wrapper {
   position: relative;
@@ -920,7 +1135,9 @@ h2 {
   outline: none;
 }
 
-.input-field::placeholder { color: inherit; }
+.input-field::placeholder {
+  color: inherit;
+}
 
 .submit-btn {
   position: absolute;
@@ -933,8 +1150,6 @@ h2 {
   padding-inline: 24px;
   font-weight: var(--fw-700);
 }
-
-
 
 
 

@@ -22,6 +22,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+
   <!-- 
     - custom css link
   -->
@@ -34,6 +36,18 @@
   <link rel="preload" as="image" href="./assets/images/hero-slide-1.png">
   <link rel="preload" as="image" href="./assets/images/hero-slide-2.png">
   <link rel="preload" as="image" href="./assets/images/hero-slide-3.png">
+
+  <style>
+    .navbar-link {
+        color: black;
+        text-decoration: none;
+        transition: color 0.3s ease; /* Smooth transition */
+    }
+
+    .navbar-link:hover {
+        color: blue; /* Change color to blue on hover */
+    }
+  </style>
 
 </head>
 
@@ -48,7 +62,7 @@
 
       <a href="#" class="logo">
         <img src="./assets/images/Kurma IT Service.png" width="220" height="60" alt="Adex home" class="logo-light">
-
+        
         <img src="./assets/images/Kurma IT Service.png" width="220" height="60" alt="Adex home" class="logo-dark">
       </a>
 
@@ -65,28 +79,20 @@
         </div>
 
         <ul class="navbar-list">
-
           <li>
-            <a href="/" class="navbar-link">Home</a>
+              <a href="/" class="navbar-link" style="color: black;">Home</a>
           </li>
-
           <li>
-            <a href="#about" class="navbar-link">About</a>
+              <a href="#about" class="navbar-link" style="color: black;">About</a>
           </li>
-
           <li>
-            <a href="#services" class="navbar-link">Services</a>
+              <a href="#services" class="navbar-link" style="color: black;">Services</a>
           </li>
-
           <li>
-            <a href="#Testimonials" class="navbar-link">Testimonials</a>
+              <a href="#contact" class="navbar-link" style="color: black;">Contact</a>
           </li>
-
-          <li>
-            <a href="#contact" class="navbar-link">Contact</a>
-          </li>
-
-        </ul>
+      </ul>
+      
 
         <div class="wrapper">
           <a href="mailto:info@email.com" class="contact-link">info@email.com</a>
@@ -145,20 +151,22 @@
         - #HERO
       -->
 
-      <section class="section hero has-bg-image" aria-label="home" style="background-image: url('./assets/images/hero-bg.jpg');">
-        <div class="container">
-          <div class="hero-content">
-            <h1 class="h1 hero-title">Welcome To Kurma IT Services</h1>
-            <h2 style="color: bisque;">ELEVATING BUSINESS</h2>
-            <h2 style="color: bisque;">Efficiency, Empowering Growth</h2>
-            
-            <div class="btn-wrapper">
-              <a href="#services" class="btn btn-primary">Explore NOW</a>
+      <!-- HTML Structure -->
+<section class="section hero has-bg-image" aria-label="home" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./assets/images/image1.jpeg');">
+  <div class="container">
+      <div class="hero-content">
+          <h1 class="h1 hero-title">Welcome To Kurma IT Services</h1>
+          <h2 style="color: bisque;">ELEVATING BUSINESS</h2>
+          <h2 style="color: bisque;">Efficiency Empowering Growth</h2>
+          
+          <div class="btn-wrapper">
+              <a href="#services" class="btn btn-primary">Explore More</a>
               <a href="#contact" class="btn btn-outline">Contact Us</a>
-            </div>
           </div>
-        </div>
-      </section>
+      </div>
+  </div>
+</section>
+
       
 
 
@@ -239,9 +247,9 @@
             <li>
               <div class="service-card">
 
-                <div class="card-icon">
-                  <ion-icon name="layers"></ion-icon>
-                </div>
+                <form>
+                  <img src="./assets/images/IMP.jpg" class="form-image" alt="Image Description">
+                </form>
 
                 <h3 class="h4 card-title">ERP Implementation</h3>
 
@@ -302,9 +310,9 @@
             <li>
               <div class="service-card">
 
-                <div class="card-icon">
-                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
-                </div>
+                <form>
+                  <img src="./assets/images/ERP.jpeg.png" class="form-image" alt="Image Description">
+                </form>
 
                 <h3 class="h4 card-title">ERP Optimization</h3>
 
@@ -328,9 +336,9 @@
             <li>
               <div class="service-card">
 
-                <div class="card-icon">
-                  <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
-                </div>
+                <form>
+                  <img src="./assets/images/TS.jpg" class="form-image" alt="Image Description">
+                </form>
 
                 <h3 class="h4 card-title">Training And Support</h3>
 
@@ -351,9 +359,9 @@
             <li>
               <div class="service-card">
 
-                <div class="card-icon">
-                  <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
-                </div>
+                <form>
+                  <img src="./assets/images/De.jpg" class="form-image" alt="Image Description">
+                </form>
 
                 <h3 class="h4 card-title">Development And Integrations</h3>
 
@@ -396,19 +404,23 @@
 
           <div class="about-content">
 
-            <p class="section-subtitle" id="about-label">Industries</p>
+            <p class="section-subtitle" id="about-labe">Industries</p>
 
-            <h2 class="h2 section-title">
+            <h2 class="h2 section-titl">
               we specialize
             </h2>
             <ul class="horizontal-list">
               <li class="about-item">
                 <div class="accordion-card expanded" data-accordion>
                   <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn>
+                    <button class="accordion-btn" data-accordion-btn onclick="toggleImage()">
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
                       <span class="span h5">Manufacturing</span>
-                    </button>
+                  </button>
+                  <div id="image-container" style="display: none;">
+                      <img src="./assets/images/Manu.jpeg" alt="Manufacturing" style="margin-top: 10px; width: 100%; max-width: 500px;">
+                  </div>
+                  
                   </h3>
                   <p class="accordion-content"></p>
                 </div>
@@ -416,33 +428,44 @@
               <li class="about-item">
                 <div class="accordion-card" data-accordion>
                   <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn>
+                    <button class="accordion-btn" data-accordion-btn onclick="toggleImag('healthcare-image')">
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-                      <span class="span h5">Healthcare</span>
+                      <span class="span h5">HealthCare</span>
                     </button>
                   </h3>
+                  <div id="healthcare-image" style="display: none;">
+                    <img src="./assets/images/Healthcare.jpeg" alt="Healthcare" style="margin-top: 10px; width: 100%; max-width: 500px;">
+                  </div>
                   <p class="accordion-content"></p>
                 </div>
               </li>
+              
               <li class="about-item">
                 <div class="accordion-card" data-accordion>
                   <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn>
+                    <button class="accordion-btn" data-accordion-btn onclick="toggleIma('aerospace-defense-image')">
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
                       <span class="span h5">Aerospace and Defense</span>
                     </button>
                   </h3>
+                  <div id="aerospace-defense-image" style="display: none;">
+                    <img src="./assets/images/Aerospace.jpeg" alt="Aerospace and Defense" style="margin-top: 10px; width: 100%; max-width: 500px;">
+                  </div>
                   <p class="accordion-content"></p>
                 </div>
               </li>
+              
               <!-- Repeat for other items -->
               <li class="about-item">
                 <div class="accordion-card" data-accordion>
                   <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn>
+                    <button class="accordion-btn" data-accordion-btn onclick="toggleIm('automotive-image')">
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
                       <span class="span h5">Automotive</span>
-                    </button>
+                  </button>
+                  <div id="automotive-image" style="display: none;">
+                      <img src="./assets/images/Auto.jpeg" alt="Manufacturing" style="margin-top: 10px; width: 100%; max-width: 500px;">
+                  </div>
                   </h3>
                   <p class="accordion-content"></p>
                 </div>
@@ -450,10 +473,13 @@
               <li class="about-item"></li>
                 <div class="accordion-card" data-accordion>
                   <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn>
+                    <button class="accordion-btn" data-accordion-btn onclick="toggleI('industrial-equipment-image')">
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
                       <span class="span h5">Industrial Equipment</span>
-                    </button>
+                  </button>
+                  <div id="industrial-equipment-image" style="display: none;">
+                      <img src="./assets/images/Indus.jpeg" alt="Manufacturing" style="margin-top: 10px; width: 100%; max-width: 500px;">
+                  </div>
                   </h3>
                   <p class="accordion-content"></p>
                 </div>
@@ -461,10 +487,13 @@
               <li class="about-item"></li>
                 <div class="accordion-card" data-accordion>
                   <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn>
+                    <button class="accordion-btn" data-accordion-btn onclick="toggle('retail')">
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
                       <span class="span h5">Retail</span>
-                    </button>
+                  </button>
+                  <div id="retail" style="display: none;">
+                      <img src="./assets/images/Retail.jpeg" alt="Manufacturing" style="margin-top: 10px; width: 100%; max-width: 500px;">
+                  </div>
                   </h3>
                   <p class="accordion-content"></p>
                 </div>
@@ -477,8 +506,83 @@
         </div>
       </section>
 
+<script>
+  function toggleImage() {
+    const imgContainer = document.getElementById("image-container");
+    const icon = document.querySelector('.down');
 
+    if (imgContainer.style.display === "none") {
+        imgContainer.style.display = "block"; // Show the image
+        icon.classList.add('active'); // Add active class to rotate icon
+    } else {
+        imgContainer.style.display = "none"; // Hide the image
+        icon.classList.remove('active'); // Remove active class
+    }
+}
+</script>
 
+<!-- /* new Js file for second image */ -->
+
+<script>
+function toggleImag(id) {
+  const imageContainer = document.getElementById(id);
+  if (imageContainer.style.display === "none") {
+    imageContainer.style.display = "block";
+  } else {
+    imageContainer.style.display = "none";
+  }
+}
+
+</script>
+
+<!--new Js file for third image-->
+<script>
+  function toggleIma(id) {
+  const imageContainer = document.getElementById(id);
+  if (imageContainer.style.display === "none") {
+    imageContainer.style.display = "block";
+  } else {
+    imageContainer.style.display = "none";
+  }
+}
+  </script>
+
+  <!--new Js file for fouth image-->
+  <script>
+    function toggleIm(id) {
+    const imageContainer = document.getElementById(id);
+    if (imageContainer.style.display === "none") {
+      imageContainer.style.display = "block";
+    } else {
+      imageContainer.style.display = "none";
+    }
+  }
+  
+    </script>
+
+    <!--new Js file for fifth image-->
+    <script>
+      function toggleI(id) {
+    const imageContainer = document.getElementById(id);
+    if (imageContainer.style.display === "none") {
+      imageContainer.style.display = "block";
+    } else {
+      imageContainer.style.display = "none";
+    }
+  }
+    </script>
+
+    <!--new Js file for sixth image-->
+    <script>
+      function toggle(id) {
+    const imageContainer = document.getElementById(id);
+    if (imageContainer.style.display === "none") {
+      imageContainer.style.display = "block";
+    } else {
+      imageContainer.style.display = "none";
+    }
+  }
+    </script>
 
 
       <!-- 
@@ -497,7 +601,7 @@
 
             <p class="section-subtitle" id="feautre-label">Kurma IT Services</p>
 
-            <h2 class="h2 section-title">
+            <h2 class="h2 section-tit">
               Why Choose Us?
             </h2>
 
@@ -510,13 +614,11 @@
               <li>
                 <div class="feature-card">
 
-                  <div class="card-icon">
-                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                  </div>
+                  
 
                   <span class="span">
-                    <h4 style="color: black; font-size: larger; font-family: 'Times New Roman', Times, serif;">Experience</h4>
-                    <p>
+                    <h4 style="color:#007BFF; font-size: larger; font-family: 'Times New Roman', Times, serif;">Experience</h4><br>
+                    <p style="color: black;">
                       With years of experience in ERP consulting, we have a deep understanding of the unique challenges and
                       opportunities that businesses face. Our expertise is your advantage.
                     </p>
@@ -528,13 +630,11 @@
               <li>
                 <div class="feature-card">
 
-                  <div class="card-icon">
-                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                  </div>
+                  
 
                   <span class="span">
-                    <h4 style="color: black; font-size: larger; font-family: 'Times New Roman', Times, serif;">Dedicated Team</h4>
-                    <p>
+                    <h4 style="color: #007BFF; font-size: larger; font-family: 'Times New Roman', Times, serif;">Dedicated Team</h4><br>
+                    <p style="color: black;">
                       Our team consists of highly skilled professionals who are not only knowledgeable in ERP systems but
                       also deeply passionate about helping our clients succeed. We are your partners in progress.
                     </p>
@@ -546,13 +646,10 @@
               <li>
                 <div class="feature-card">
 
-                  <div class="card-icon">
-                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                  </div>
 
                   <span class="span">
-                    <h4 style="color: black; font-size: larger; font-family: 'Times New Roman', Times, serif;">Tailored Solutions</h4>
-                    <p>
+                    <h4 style="color: #007BFF; font-size: larger; font-family: 'Times New Roman', Times, serif;">Tailored Solutions</h4><br>
+                    <p style="color: black;">
                       We understand that one size does not fit all. That's why we work closely with each client to tailor ERP
                       solutions to their specific needs, ensuring the best possible outcomes.
                     </p>
@@ -564,13 +661,11 @@
               <li>
                 <div class="feature-card">
 
-                  <div class="card-icon">
-                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
-                  </div>
+                  
 
                   <span class="span">
-                    <h4 style="color: black; font-size: larger; font-family: 'Times New Roman', Times, serif;">Client-Centric Approach</h4>
-                    <p>
+                    <h4 style="color: #007BFF; font-size: larger; font-family: 'Times New Roman', Times, serif;">Client-Centric Approach</h4> <br>
+                    <p style="color: black;">
                       We prioritize your goals and objectives. Your success is our success, and we are dedicated to delivering
                       solutions that align with your business's unique vision.
                     </p>
@@ -594,14 +689,23 @@
       <!-- 
         - #PROJECT
       -->
-
-      <section class="section project" aria-labelledby="project-label" id="Testimonials">
+      <h2 class="h2 section-ti">
+        Our Clients
+      </h2>
+      <div class="clients-container">
+        <div class="client-logo"><img src="./assets/images/Picture.png" alt="Coficab"></div>
+        <div class="client-logo"><img src="./assets/images/Picture1.png" alt="WSAudiology"></div>
+        <div class="client-logo"><img src="./assets/images/Picture3.png" alt="Lilium"></div>
+        <div class="client-logo"><img src="./assets/images/Picture4.png" alt=""></div> 
+    </div>  <br> <br> <br> <br>
+    
+      <!-- <section class="section project" aria-labelledby="project-label" id="Testimonials">
         <div class="container">
 
           <p class="section-subtitle" id="project-label"></p>
 
-          <h2 class="h2 section-title">
-            My clients
+          <h2 class="h2 section-ti">
+            Our clients
           </h2>
 
           <ul class="grid-list">
@@ -700,12 +804,51 @@
                 </div>
 
               </div>
+
+              <div class="project-card">
+
+                <div class="parent-container">
+                  <figure class="card-banner img-holder" style="--width: 70; --height: 20;">
+                    <img src="./assets/images/Picture3.png" width="100" height="50" loading="lazy" alt="Ligula tristique quis risus" class="img-cover">
+                  </figure>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Ultricies fusce porta elit</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras
+                    imperdiet nun eu dolor.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-02-26">26 Feb 2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Meeting</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
             </li>
 
           </ul>
 
         </div>
-      </section>
+      </section> -->
 
 
 
@@ -744,23 +887,14 @@
 
         <ul class="social-list">
 
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href="- https://x.com/KurmaITServices" class="social-link">
+              <img width="50" height="50" src="./assets/images/twitter-logo-png.png" alt="twitterx--v1"/>
             </a>
           </li>
+          
 
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
 
           <li>
             <a href="https://www.linkedin.com/company/100578020/admin/dashboard/" class="social-link" target="_blank" rel="noopener noreferrer">
@@ -776,24 +910,7 @@
 
       <ul class="footer-list">
 
-        <li>
-          <p class="h4 footer-list-title">Get in Touch</p>
-        </li>
-
-        <li>
-          <address class="footer-text">
-            Hart van Brabantlaan 12-14 5038JL Tilburg
-            The Netherlands
-          </address>
-        </li>
-
-        <li>
-          <a href="info@kurmaitservices.com" class="footer-link">info@kurmaitservices.com</a>
-        </li>
-
-        <li>
-          <a href="tel:+31 6 27889720" class="footer-link">+31 6 27889720</a>
-        </li>
+        
 
       </ul>
 
@@ -808,16 +925,13 @@
         </li>
 
         <li>
-          <a href="#about" class="footer-link">About-Us</a>
+          <a href="#about" class="footer-link">About Us</a>
         </li>
 
         <li>
           <a href="#services" class="footer-link">Services</a>
         </li>
 
-        <li>
-          <a href="#Testimonials" class="footer-link">Testimonials</a>
-        </li>
 
         <li>
           <a href="#contact" class="footer-link">Contact-Us</a>
@@ -827,14 +941,25 @@
 
       <div class="footer-list">
 
-        <p class="h4 footer-list-title">SUBSCRIBE US</p>
+        <p class="h4 footer-list-title">Contact Us</p>
 
-        <form name="submit-to-google-sheet" action="" class="input-wrapper">
-          <input type="email" name="Email" placeholder="Email Address" required class="input-field">
-
-          <button type="submit" class="submit-btn">SUBSCRIBE</button>
-        </form>
-        <span id="msg"></span>
+        <ul>
+          <li>
+            <address class="footer-text">
+              Manderveenstraat 25 5045 LD 
+              Tilburg The Netherlands
+            </address>
+          </li>
+  
+          <li>
+            <a href="info@kurmaitservices.com" class="footer-link">info@kurmaitservices.com</a>
+          </li>
+  
+          <li>
+            <a href="tel:+31 6 27889720" class="footer-link">+31 6 27889720</a>
+          </li>
+  
+        </ul>
 
       </div>
 
@@ -855,26 +980,6 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycby59Y73QVDHTuY_U5A06I1tBDbZSKDYx_15w2anz0OmNyLM4gyfZroqtee3cdKOUJnJew/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-                msg.innerHTML ="Thank You For Subscribing!"
-                setTimeout(function(){
-                  msg.innerHTML = ""
-                },5000)
-                form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
 
 </body>
 
