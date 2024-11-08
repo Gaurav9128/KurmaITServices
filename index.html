@@ -28,6 +28,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/output.css">
 
   <!-- 
     - preload images
@@ -411,92 +412,44 @@
             </h2>
             <ul class="horizontal-list">
               <li class="about-item">
-                <div class="accordion-card expanded" data-accordion>
-                  <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn onclick="toggleImage()">
-                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-                      <span class="span h5">Manufacturing</span>
-                  </button>
-                  <div id="image-container" style="display: none;">
-                      <img src="./assets/images/Manu.jpeg" alt="Manufacturing" style="margin-top: 10px; width: 100%; max-width: 500px;">
-                  </div>
-                  
-                  </h3>
-                  <p class="accordion-content"></p>
-                </div>
+                  <h3 class="card-title text-red-400">Manufacturing</h3>
+                  <img src="./assets/images/Manu.jpeg" alt="Manufacturing" style="margin-top: 10px; width: 100%; max-width: 500px;">
               </li>
+
               <li class="about-item">
-                <div class="accordion-card" data-accordion>
-                  <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn onclick="toggleImag('healthcare-image')">
-                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-                      <span class="span h5">HealthCare</span>
-                    </button>
+                  <h3 class="card-title text-gray-400">
+                    HealthCare
                   </h3>
-                  <div id="healthcare-image" style="display: none;">
-                    <img src="./assets/images/Healthcare.jpeg" alt="Healthcare" style="margin-top: 10px; width: 100%; max-width: 500px;">
-                  </div>
-                  <p class="accordion-content"></p>
-                </div>
+                  <img src="./assets/images/Healthcare.jpeg" alt="Healthcare" style="margin-top: 10px; width: 100%; max-width: 500px;">
               </li>
               
               <li class="about-item">
-                <div class="accordion-card" data-accordion>
                   <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn onclick="toggleIma('aerospace-defense-image')">
-                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-                      <span class="span h5">Aerospace and Defense</span>
-                    </button>
+                    Aerospace and Defense
                   </h3>
-                  <div id="aerospace-defense-image" style="display: none;">
-                    <img src="./assets/images/Aerospace.jpeg" alt="Aerospace and Defense" style="margin-top: 10px; width: 100%; max-width: 500px;">
-                  </div>
-                  <p class="accordion-content"></p>
-                </div>
+                  <img src="./assets/images/Aerospace.jpeg" alt="Aerospace and Defense" style="margin-top: 10px; width: 100%; max-width: 500px;">
               </li>
               
               <!-- Repeat for other items -->
               <li class="about-item">
-                <div class="accordion-card" data-accordion>
                   <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn onclick="toggleIm('automotive-image')">
-                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-                      <span class="span h5">Automotive</span>
-                  </button>
-                  <div id="automotive-image" style="display: none;">
-                      <img src="./assets/images/Auto.jpeg" alt="Manufacturing" style="margin-top: 10px; width: 100%; max-width: 500px;">
-                  </div>
+                    Automotive
                   </h3>
-                  <p class="accordion-content"></p>
-                </div>
+                  <img src="./assets/images/Auto.jpeg" alt="Manufacturing" style="margin-top: 10px; width: 100%; max-width: 500px;">
               </li>
-              <li class="about-item"></li>
-                <div class="accordion-card" data-accordion>
+              <li class="about-item">
                   <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn onclick="toggleI('industrial-equipment-image')">
-                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-                      <span class="span h5">Industrial Equipment</span>
-                  </button>
-                  <div id="industrial-equipment-image" style="display: none;">
-                      <img src="./assets/images/Indus.jpeg" alt="Manufacturing" style="margin-top: 10px; width: 100%; max-width: 500px;">
-                  </div>
+                      Industrial Equipment
                   </h3>
-                  <p class="accordion-content"></p>
-                </div>
+                  <img src="./assets/images/Indus.jpeg" alt="Manufacturing" style="margin-top: 10px; width: 100%; max-width: 500px;">
+            
               </li>
-              <li class="about-item"></li>
-                <div class="accordion-card" data-accordion>
+
+              <li class="about-item">
                   <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn onclick="toggle('retail')">
-                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-                      <span class="span h5">Retail</span>
-                  </button>
-                  <div id="retail" style="display: none;">
-                      <img src="./assets/images/Retail.jpeg" alt="Manufacturing" style="margin-top: 10px; width: 100%; max-width: 500px;">
-                  </div>
+                    Retail
                   </h3>
-                  <p class="accordion-content"></p>
-                </div>
+                  <img src="./assets/images/Retail.jpeg" alt="Manufacturing" style="margin-top: 10px; width: 100%; max-width: 500px;">
               </li>
             </ul>
             
