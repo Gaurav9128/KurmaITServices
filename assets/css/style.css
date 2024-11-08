@@ -455,7 +455,7 @@ body.nav-active {
 }
 
 .h1.hero-title {
-  font-size: 5rem; /* Adjust the size for the heading */
+  font-size: 3rem; /* Adjust the size for the heading */
   margin-bottom: 15px; /* Space below the title */
   color: #228df7;
 }
@@ -646,7 +646,7 @@ form {
   #ABOUT
 \*-----------------------------------*/
 
-.about .container {
+.about .custom-container {
   display: flex;
   flex-direction: column; /* Arrange items in a column */
   justify-content: center; /* Vertically center content */
@@ -654,7 +654,7 @@ form {
   text-align: center; /* Center the text */
   gap: 70px;
   height: auto; /* Full viewport height */
-  padding: 80px;
+  margin-bottom: 50px;
   color: black;
 }
 
@@ -936,22 +936,9 @@ form {
 
 .feature-list {
   display: flex;
-  justify-content: space-between; /* Saare cards ko space dega */
-  align-items: start;
-  flex-wrap: nowrap; /* Cards ko ek hi row me rakhega */
-  gap: 20px;
+  gap: 8px;
   list-style: none; /* List ke dots hatane ke liye */
   padding: 0; /* Default padding hatane ke liye */
-}
-
-.feature-card {
-  flex: 1;
-  min-width: 200px; /* Minimum width set karke ek row mein rakhne mein madad karega */
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: left;
 }
 
 .card-icon {
@@ -1019,14 +1006,6 @@ form {
   overflow: hidden;
   box-shadow: var(--shadow-2);
   height: 20%;
-}
-
-.clients-container {
-  display: flex;
-  justify-content: center; /* Align the items in the center of the container */
-  align-items: center; /* Center the items vertically */
-  gap: 20px; /* Optional: Adds space between the client logos */
-  flex-wrap: nowrap; /* Ensure no wrapping occurs */
 }
 
 .client-logo {
@@ -1232,6 +1211,12 @@ form {
     max-width: 540px;
     width: 100%;
     margin-inline: auto;
+  }
+
+  .h1.hero-title {
+    font-size: 5rem; /* Adjust the size for the heading */
+    margin-bottom: 15px; /* Space below the title */
+    color: #228df7;
   }
 
   /**
@@ -1466,10 +1451,6 @@ form {
   /**
    * REUSED STYLE
    */
-
-  .container {
-    max-width: 1140px;
-  }
 
   /**
    * HERO
