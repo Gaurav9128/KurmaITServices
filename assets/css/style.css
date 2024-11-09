@@ -3,7 +3,6 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 codewithsadee
  */
 
 /*-----------------------------------*\
@@ -953,7 +952,7 @@ form {
 }
 
 .h2.section-tit {
-  font-size: 20px; /* Decrease the font size */
+  font-size: 25px; /* Decrease the font size */
   font-weight: normal; /* Optionally adjust the weight */
   margin-bottom: 20px; /* Add space below (optional) */
   color: #000000;
