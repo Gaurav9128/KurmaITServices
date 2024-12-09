@@ -397,145 +397,63 @@
 
       <section class="about" aria-labelledby="about-label">
         <div class="container">
-
-          <!-- <figure class="about-banner">
-            <img src="./assets/images/about-banner.png" width="800" height="580" loading="lazy" alt="about banner"
-              class="w-100">
-          </figure> -->
-
           <div class="d-flex flex-column justify-content-center">
-
             <p class="section-subtitle" id="about-labe">Industries</p>
-
-            <h2 class="h2 section-titl text-center">
-              We Specialize In
-            </h2>
-            <ul class="row row-cols-2 gy-5 row-cols-sm-3">
+            <h2 class="h2 section-titl text-center">We Specialize In</h2>
+            <ul class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
               <li class="about-item col">
-                  <h3 class="card-title fs-3 md:fs-1 text-center">Manufacturing</h3>
-                  <img src="./assets/images/Manu.jpeg" alt="Manufacturing" style="margin-top: 10px; width: 100%; max-width: 450px;">
-              </li>
-
-              <li class="about-item col">
-                  <h3 class="card-title fs-3 md:fs-1 text-center">
-                    HealthCare
-                  </h3>
-                  <img src="./assets/images/He.jpeg" alt="Healthcare" style="margin-top: 10px; width: 100%; max-width: 600px;">
-              </li>
-              
-              <li class="about-item col">
-                  <h3 class="card-title fs-3 md:fs-1 text-center">
-                    Aerospace and Defense
-                  </h3>
-                  <img src="./assets/images/Aerospace.jpeg" alt="Aerospace and Defense" style="margin-top: 10px; width: 100%; max-width: 450px;">
-              </li>
-              
-              <!-- Repeat for other items -->
-              <li class="about-item col">
-                  <h3 class="card-title fs-3 md:fs-1 text-center">
-                    Automotive
-                  </h3>
-                  <img src="./assets/images/Auto.jpeg" alt="Manufacturing" style="margin-top: 10px; width: 100%; max-width: 450px;">
+                <div class="card text-center border-0 shadow-sm h-100">
+                  <img src="./assets/images/Manu.jpeg" alt="Manufacturing" class="card-img-top img-fluid rounded">
+                  <div class="card-body">
+                    <h3 class="card-title fs-8">Manufacturing</h3>
+                  </div>
+                </div>
               </li>
               <li class="about-item col">
-                  <h3 class="card-title fs-3 md:fs-1 text-center">
-                      Industrial Equipment
-                  </h3>
-                  <img src="./assets/images/Indus.jpeg" alt="Manufacturing" style="margin-top: 10px; width: 100%; max-width: 450px;">
-            
+                <div class="card text-center border-0 shadow-sm h-100">
+                  <img src="./assets/images/He.jpeg" alt="Healthcare" class="card-img-top img-fluid rounded">
+                  <div class="card-body">
+                    <h3 class="card-title fs-8">HealthCare</h3>
+                  </div>
+                </div>
               </li>
-
               <li class="about-item col">
-                  <h3 class="card-title fs-3 md:fs-1 text-center">
-                    Retail
-                  </h3>
-                  <img src="./assets/images/Re.jpeg" alt="Manufacturing" style="margin-top: 10px; width: 110%; max-width: 479px;">
+                <div class="card text-center border-0 shadow-sm h-100">
+                  <img src="./assets/images/Aerospace.jpeg" alt="Aerospace and Defense" class="card-img-top img-fluid rounded">
+                  <div class="card-body">
+                    <h3 class="card-title fs-8">Aerospace and Defense</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="about-item col">
+                <div class="card text-center border-0 shadow-sm h-100">
+                  <img src="./assets/images/Auto.jpeg" alt="Automotive" class="card-img-top img-fluid rounded">
+                  <div class="card-body">
+                    <h3 class="card-title fs-8">Automotive</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="about-item col">
+                <div class="card text-center border-0 shadow-sm h-100">
+                  <img src="./assets/images/Indus.jpeg" alt="Industrial Equipment" class="card-img-top img-fluid rounded">
+                  <div class="card-body">
+                    <h3 class="card-title fs-8">Industrial Equipment</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="about-item col">
+                <div class="card text-center border-0 shadow-sm h-100">
+                  <img src="./assets/images/Re.jpeg" alt="Retail" class="card-img-top img-fluid rounded">
+                  <div class="card-body">
+                    <h3 class="card-title fs-8">Retail</h3>
+                  </div>
+                </div>
               </li>
             </ul>
-            
-
           </div>
-
         </div>
       </section>
-
-<script>
-  function toggleImage() {
-    const imgContainer = document.getElementById("image-container");
-    const icon = document.querySelector('.down');
-
-    if (imgContainer.style.display === "none") {
-        imgContainer.style.display = "block"; // Show the image
-        icon.classList.add('active'); // Add active class to rotate icon
-    } else {
-        imgContainer.style.display = "none"; // Hide the image
-        icon.classList.remove('active'); // Remove active class
-    }
-}
-</script>
-
-<!-- /* new Js file for second image */ -->
-
-<script>
-function toggleImag(id) {
-  const imageContainer = document.getElementById(id);
-  if (imageContainer.style.display === "none") {
-    imageContainer.style.display = "block";
-  } else {
-    imageContainer.style.display = "none";
-  }
-}
-
-</script>
-
-<!--new Js file for third image-->
-<script>
-  function toggleIma(id) {
-  const imageContainer = document.getElementById(id);
-  if (imageContainer.style.display === "none") {
-    imageContainer.style.display = "block";
-  } else {
-    imageContainer.style.display = "none";
-  }
-}
-  </script>
-
-  <!--new Js file for fouth image-->
-  <script>
-    function toggleIm(id) {
-    const imageContainer = document.getElementById(id);
-    if (imageContainer.style.display === "none") {
-      imageContainer.style.display = "block";
-    } else {
-      imageContainer.style.display = "none";
-    }
-  }
-  
-    </script>
-
-    <!--new Js file for fifth image-->
-    <script>
-      function toggleI(id) {
-    const imageContainer = document.getElementById(id);
-    if (imageContainer.style.display === "none") {
-      imageContainer.style.display = "block";
-    } else {
-      imageContainer.style.display = "none";
-    }
-  }
-    </script>
-
-    <!--new Js file for sixth image-->
-    <script>
-      function toggle(id) {
-    const imageContainer = document.getElementById(id);
-    if (imageContainer.style.display === "none") {
-      imageContainer.style.display = "block";
-    } else {
-      imageContainer.style.display = "none";
-    }
-  }
-    </script>
+      
 
 
       <!-- 
@@ -544,96 +462,41 @@ function toggleImag(id) {
 
       <section class="section feature" aria-labelledby="feature-label">
         <div class="custom-container">
-
-          <!-- <figure class="feature-banner">
-            <img src="./assets/images/feature-banner.png" width="800" height="531" loading="lazy" alt="feature banner"
-              class="w-100">
-          </figure> -->
-
           <div class="feature-content">
-
-            <p class="section-subtitle" id="feautre-label">Kurma IT Services</p>
-
-            <h2 class="h2 section-tit">
-              Why Choose Us?
-            </h2>
-
-            <p class="section-text">
-              
-            </p>
-
-            <ul class="feature-list mx-4 fs-6 fs-md-5 flex-wrap flex-sm-nowrap">
-
-              <li class="bg-light p-4 rounded shadow-sm text-start">
-                <div>
-
-                  
-
-                  <span class="span">
-                    <h4 style="color:#007BFF; font-size: 1.5em;">Experience</h4><br>
-                    <p style="color: black; font-size: 1.5em; font-family: 'Times New Roman', Times, serif;">
-                      With years of experience in ERP consulting, we have a deep understanding of the unique challenges and
-                      opportunities that businesses face. Our expertise is your advantage.
-                    </p>
-                  </span>
-
-                </div>
+            <p class="section-subtitle" id="feature-label">Kurma IT Services</p>
+            <h2 class="h2 section-tit">Why Choose Us?</h2>
+            <p class="section-text"></p>
+            <ul class="feature-list mx-4 fs-6 fs-md-5 d-flex flex-wrap align-items-stretch justify-content-around">
+              <li class="bg-light p-4 rounded shadow-sm text-start" style="flex: 0 0 45%; margin: 10px;">
+                <h4 style="color: #007BFF; font-size: 1.5em;">Experience</h4>
+                <p style="color: black; font-size: 1.9em; font-family: 'Times New Roman', Times, serif;">
+                  With years of experience in ERP consulting, we have a deep understanding of the unique challenges and opportunities that businesses face. Our expertise is your advantage.
+                </p>
               </li>
-
-              <li class="bg-light p-4 rounded shadow-sm text-start">
-                <div>
-
-                  
-
-                  <span class="span">
-                    <h4 style="color: #007BFF; font-size: 1.5em;">Dedicated Team</h4><br>
-                    <p style="color: black; font-size: 1.5em; font-family: 'Times New Roman', Times, serif;">
-                      Our team consists of highly skilled professionals who are not only knowledgeable in ERP systems but
-                      also deeply passionate about helping our clients succeed. We are your partners in progress.
-                    </p>
-                  </span>
-
-                </div>
+              <li class="bg-light p-4 rounded shadow-sm text-start" style="flex: 0 0 45%; margin: 10px;">
+                <h4 style="color: #007BFF; font-size: 1.5em;">Dedicated Team</h4>
+                <p style="color: black; font-size:  1.9em; font-family: 'Times New Roman', Times, serif;">
+                  Our team consists of highly skilled professionals who are not only knowledgeable in ERP systems but also deeply passionate about helping our clients succeed. We are your partners in progress.
+                </p>
               </li>
-
-              <li class="bg-light p-4 rounded shadow-sm text-start">
-                <div >
-
-
-                  <span class="span">
-                    <h4 style="color: #007BFF; font-size: 1.5em;">Tailored Solutions</h4><br>
-                    <p style="color: black;font-size: 1.5em; font-family: 'Times New Roman', Times, serif;">
-                      We understand that one size does not fit all. That's why we work closely with each client to tailor ERP
-                      solutions to their specific needs, ensuring the best possible outcomes.
-                    </p>
-                  </span>
-
-                </div>
+              <li class="bg-light p-4 rounded shadow-sm text-start" style="flex: 0 0 45%; margin: 10px;">
+                <h4 style="color: #007BFF; font-size: 1.5em;">Tailored Solutions</h4>
+                <p style="color: black; font-size: 1.9em; font-family: 'Times New Roman', Times, serif;">
+                  We understand that one size does not fit all. That's why we work closely with each client to tailor ERP solutions to their specific needs, ensuring the best possible outcomes.
+                </p>
               </li>
-
-              <li class="bg-light p-4 rounded shadow-sm text-start">
-                <div>
-
-                  
-
-                  <span class="span">
-                    <h4 style="color: #007BFF; font-size: 1.5em;">Client-Centric Approach</h4> <br>
-                    <p style="color: black; font-size: 1.5em; font-family: 'Times New Roman', Times, serif;">
-                      We prioritize your goals and objectives. Your success is our success, and we are dedicated to delivering
-                      solutions that align with your business's unique vision.
-                    </p>
-                  </span>
-
-                </div>
+              <li class="bg-light p-4 rounded shadow-sm text-start" style="flex: 0 0 45%; margin: 10px;">
+                <h4 style="color: #007BFF; font-size: 1.5em;">Client-Centric Approach</h4>
+                <p style="color: black; font-size:  1.9em; font-family: 'Times New Roman', Times, serif;">
+                  We prioritize your goals and objectives. Your success is our success, and we are dedicated to delivering solutions that align with your business's unique vision.
+                </p>
               </li>
-
             </ul>
-
           </div>
-
         </div>
       </section>
-
+      
+      
 
 
 
@@ -652,157 +515,6 @@ function toggleImag(id) {
         <div class="client-logo" style="height: auto; "><img class="w-100 h-100" src="./assets/images/Picture4.png" alt=""></div> 
     </div>  <br> <br> <br> <br>
     
-      <!-- <section class="section project" aria-labelledby="project-label" id="Testimonials">
-        <div class="container">
-
-          <p class="section-subtitle" id="project-label"></p>
-
-          <h2 class="h2 section-ti">
-            Our clients
-          </h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="project-card">
-
-                <div class="parent-container">
-                  <figure class="card-banner img-holder" style="--width: 100; --height: 20;">
-                    <img src="./assets/images/Picture.png" width="200" height="100" loading="lazy" alt="Ligula tristique quis risus" class="img-cover">
-                  </figure>
-                </div>
-                
-
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card">
-
-                <div class="parent-container">
-                  <figure class="card-banner img-holder" style="--width: 100; --height: 20;">
-                    <img src="./assets/images/Picture1.png" width="200" height="100" loading="lazy" alt="Ligula tristique quis risus" class="img-cover">
-                  </figure>
-                </div>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Nullam id dolor elit id nibh</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras
-                    imperdiet nun eu dolor.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="meta-text" datetime="2022-03-29">29 Mar 2022</time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="meta-text">Workspace</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card">
-
-                <div class="parent-container">
-                  <figure class="card-banner img-holder" style="--width: 100; --height: 20;">
-                    <img src="./assets/images/Picture3.png" width="200" height="100" loading="lazy" alt="Ligula tristique quis risus" class="img-cover">
-                  </figure>
-                </div>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Ultricies fusce porta elit</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras
-                    imperdiet nun eu dolor.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="meta-text" datetime="2022-02-26">26 Feb 2022</time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="meta-text">Meeting</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-              </div>
-
-              <div class="project-card">
-
-                <div class="parent-container">
-                  <figure class="card-banner img-holder" style="--width: 70; --height: 20;">
-                    <img src="./assets/images/Picture3.png" width="100" height="50" loading="lazy" alt="Ligula tristique quis risus" class="img-cover">
-                  </figure>
-                </div>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Ultricies fusce porta elit</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras
-                    imperdiet nun eu dolor.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="meta-text" datetime="2022-02-26">26 Feb 2022</time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="meta-text">Meeting</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section> -->
-
 
 
 
