@@ -381,6 +381,7 @@ body.nav-active {
   padding-top: 60px; /* Adjust according to navbar height */
 }
 
+
 .navbar.active {
   visibility: visible;
   transform: translateX(300px);
@@ -415,7 +416,7 @@ body.nav-active {
 
 .navbar-link {
   font-weight: var(--fw-700);
-  padding-block: 6px;
+  padding-block: 8px;
 }
 
 .contact-link {
@@ -927,7 +928,7 @@ form {
 \*-----------------------------------*/
 
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -938,7 +939,7 @@ form {
 
 .feature-list {
   display: flex;
-  gap: 8px;
+  gap: 4px;
   list-style: none; /* List ke dots hatane ke liye */
   padding: 0; /* Default padding hatane ke liye */
 }
@@ -1561,4 +1562,26 @@ form {
 ul {
   padding: 0;
   list-style: none;
+}
+
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.feature-list li {
+  transition: transform 0.3s ease;
+}
+
+.feature-list li:hover {
+  transform: scale(1.05);
+}
+
+.feature-list img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
