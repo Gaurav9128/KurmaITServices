@@ -62,84 +62,32 @@
   -->
 
   <header class="header" data-header>
-    <div class="container">
+    <!-- <div class="container">
 
       <a href="#" class="logo">
         <img src="./assets/images/Kurma IT Service.png" width="220" height="60" alt="Adex home" class="logo-light">
 
         <img src="./assets/images/Kurma IT Service.png" width="220" height="60" alt="Adex home" class="logo-dark">
       </a>
+    </div> -->
 
-      <nav class="navbar" data-navbar>
-
-        <div class="navbar-top">
-          <a href="#" class="logo">
-            <img style="background-color: white; border-radius: 10px;" src="./assets/images/Kurma IT Service.png" width="150" height="80" alt="Adex home">
-          </a>
-
-          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
-        </div>
-
-        <ul class="navbar-list">
-          <li>
-            <a href="/" class="navbar-link" style="color: black; background-color:white;border-radius: 9px; text-align: center; ">Home</a><br/>
-          </li>
-          <li>
-            <a href="#about" class="navbar-link" style="color: black; background-color:white; border-radius: 9px; text-align: center;">About</a> <br/>
-          </li>
-          <li>
-            <a href="#services" class="navbar-link" style="color: black; background-color:white; border-radius: 9px; text-align: center;">Services</a><br/>
-          </li>
-          <li>
-            <a href="#contact" class="navbar-link" style="color: black; background-color:white; border-radius: 9px; text-align: center;">Contact</a>
-          </li>
-        </ul>
-
-
-        <div class="wrapper">
-          <a href="mailto:info@email.com" class="contact-link">info@email.com</a>
-
-          <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a>
-        </div>
-
-        <ul class="social-list">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </nav>
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
-
-      <div class="overlay" data-nav-toggler data-overlay></div>
-
-    </div>
+    <nav>
+      <div class="logo">
+        <a href="#" class="logo">
+          <img style="background-color: white; border-radius: 5px;" src="./assets/images/Kurma IT Service.png" width="200" height="80" alt="Adex home">
+        </a>
+      </div>
+      <ul id="menuList">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <div class="menu-icon">
+        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+      </div>
+    </nav>
   </header>
   <main>
     <article>
@@ -434,26 +382,30 @@
 
       <style>
         .feature-list {
-          margin-top: 0; /* Remove top margin */
-          margin-bottom: 10; /* Remove bottom margin */
+          margin-top: 0;
+          /* Remove top margin */
+          margin-bottom: 10;
+          /* Remove bottom margin */
         }
-      
+
         .box {
-          margin: -20px 10px; /* Horizontal space reduced to 10px */
+          margin: -20px 10px;
+          /* Horizontal space reduced to 10px */
         }
-      
+
         .feature-content {
-          padding: 0 10px; /* Overall padding reduced */
+          padding: 0 10px;
+          /* Overall padding reduced */
         }
       </style>
-      
+
       <section class="section feature" aria-labelledby="feature-label">
         <div class="custom-container">
           <div class="feature-content">
             <p class="section-subtitle" id="about-labe">Kurma IT Services</p>
             <h2 class="h2 section-tit" style="font-size: 20px;">Why Choose Us?</h2>
-            <p class="section-text"></p> <br/>
-      
+            <p class="section-text"></p> <br />
+
             <div class="feature-list mx-4fs-6 fs-md-5 d-flex flex-wrap align-items-stretch justify-content-center">
               <div class="bg-light p-3 rounded shadow-sm text-center box" style="width: 320px;">
                 <h4 style="color: #007BFF; font-size: 1.2em; margin-top: 10px;">Experience</h4>
@@ -462,7 +414,7 @@
                   opportunities that businesses face. Our expertise is your advantage.
                 </p>
               </div>
-           
+
               <div class="bg-light p-3 rounded shadow-sm text-center box" style="width: 320px;">
                 <h4 style="color: #007BFF; font-size: 1.2em; margin-top: 10px;">Dedicated Team</h4>
                 <p style="color: black; font-size: 1.2em; font-family: 'Times New Roman', Times, serif;">
@@ -470,12 +422,12 @@
                   also deeply passionate about helping our clients succeed.
                 </p>
               </div>
-               </div>
             </div>
           </div>
         </div>
+        </div>
       </section>
-      
+
       <section>
         <div class="feature-list mx-4fs-6 fs-md-5 d-flex flex-wrap align-items-stretch justify-content-center">
           <div class="bg-light p-3 rounded shadow-sm text-center box" style="width: 320px;">
@@ -493,7 +445,7 @@
           </div>
         </div>
       </section>
-       <br/> <br/> <br/>
+      <br /> <br /> <br />
       <!-- 
         - #PROJECT
       -->
@@ -523,22 +475,29 @@
   <style>
     .social-icons {
       display: flex;
-      justify-content: center; /* Icons aligned to the left */
-      gap: 10px; /* Space between icons */
-      margin-top: 20px; /* Add some space above the icons */
+      justify-content: center;
+      /* Icons aligned to the left */
+      gap: 10px;
+      /* Space between icons */
+      margin-top: 20px;
+      /* Add some space above the icons */
     }
-  
+
     .social-link {
-      font-size: 2.5rem; /* Icon size */
-      color: #f8f9fa; /* Default color */
-      transition: color 0.3s ease; /* Smooth hover effect */
+      font-size: 2.5rem;
+      /* Icon size */
+      color: #f8f9fa;
+      /* Default color */
+      transition: color 0.3s ease;
+      /* Smooth hover effect */
     }
-  
+
     .social-link:hover {
-      color: #ffd700; /* Golden color on hover */
+      color: #ffd700;
+      /* Golden color on hover */
     }
   </style>
-  
+
 
   <footer style="background-color: #001a33; color: #d4d4d4; padding: 20px;">
     <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
@@ -546,25 +505,25 @@
       <div style="flex: 1; text-align: center; min-width: 300px; margin-bottom: 20px;">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2478.627356168685!2d4.990492!3d51.5933927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c69634aae0c11d%3A0xf4cf709d2c082ee8!2sManderveenstraat%2025%2C%205045%20LD%20Tilburg%2C%20Netherlands!5e0!3m2!1sen!2sin!4v1735189631257!5m2!1sen!2sin"
-          width="80%"
-          height="200"
-          style="border: 0;"
-          allowfullscreen=""
-          loading="lazy">
+          width="80%" height="200" style="border: 0;" allowfullscreen="" loading="lazy">
         </iframe>
       </div>
-  
+
       <!-- Learn More Section -->
       <div style="flex: 1; text-align: center; min-width: 200px; margin-bottom: 20px;">
         <h4 style="color: #f0c040;">Learn More</h4>
         <ul style="list-style: none; padding: 0;">
-          <li><a href="/" style="color: #d4d4d4; text-decoration: none; line-height: 1.9;" onmouseover="this.style.color='#007bff';" onmouseout="this.style.color='#d4d4d4';">Home</a></li>
-          <li><a href="#about" style="color: #d4d4d4; text-decoration: none; line-height: 1.9;" onmouseover="this.style.color='#007bff';" onmouseout="this.style.color='#d4d4d4';">About Us</a></li>
-          <li><a href="#services" style="color: #d4d4d4; text-decoration: none; line-height: 1.9;" onmouseover="this.style.color='#007bff';" onmouseout="this.style.color='#d4d4d4';">Services</a></li>
-          <li><a href="#contact" style="color: #d4d4d4; text-decoration: none; line-height: 1.9;" onmouseover="this.style.color='#007bff';" onmouseout="this.style.color='#d4d4d4';">Contact Us</a></li>
+          <li><a href="/" style="color: #d4d4d4; text-decoration: none; line-height: 1.9;"
+              onmouseover="this.style.color='#007bff';" onmouseout="this.style.color='#d4d4d4';">Home</a></li>
+          <li><a href="#about" style="color: #d4d4d4; text-decoration: none; line-height: 1.9;"
+              onmouseover="this.style.color='#007bff';" onmouseout="this.style.color='#d4d4d4';">About Us</a></li>
+          <li><a href="#services" style="color: #d4d4d4; text-decoration: none; line-height: 1.9;"
+              onmouseover="this.style.color='#007bff';" onmouseout="this.style.color='#d4d4d4';">Services</a></li>
+          <li><a href="#contact" style="color: #d4d4d4; text-decoration: none; line-height: 1.9;"
+              onmouseover="this.style.color='#007bff';" onmouseout="this.style.color='#d4d4d4';">Contact Us</a></li>
         </ul>
       </div>
-  
+
       <!-- Contact Section -->
       <div style="flex: 1; text-align: center; min-width: 200px;">
         <h4 style="color: #f0c040;">Contact Us</h4>
@@ -581,13 +540,13 @@
         </div>
       </div>
     </div>
-  
+
     <!-- Copyright -->
     <div style="text-align: center; margin-top: 20px; border-top: 1px solid #007bff; padding-top: 10px;">
       <p>© 2024 Developed & Designed by Gaurav Jain. All rights reserved.</p>
     </div>
   </footer>
-  
+
   <style>
     @media (max-width: 768px) {
       footer div {
@@ -596,7 +555,7 @@
       }
     }
   </style>
-  
+
   <!-- 
     - custom js link
   -->
@@ -610,6 +569,21 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script>
+      let menuList = document.getElementById("menuList")
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu(){
+          if(menuList.style.maxHeight == "0px")
+          {
+              menuList.style.maxHeight = "300px";
+          }
+          else{
+              menuList.style.maxHeight = "0px";
+          }
+      }
+      
+  </script>
 </body>
 
 </html>
