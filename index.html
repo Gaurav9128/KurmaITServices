@@ -74,12 +74,13 @@
     <nav>
       <div class="logo">
         <a href="#" class="logo">
-          <img style="background-color: white; border-radius: 5px;" src="./assets/images/Kurma IT Service.png" width="200" height="80" alt="Adex home">
+          <img style="background-color: white; border-radius: 5px;" src="./assets/images/Kurma IT Service.png"
+            width="200" height="80" alt="Adex home">
         </a>
       </div>
       <ul id="menuList">
         <li><a href="/">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#about-us">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -115,10 +116,9 @@
         - #ABOUT
       -->
 
-      <section class="about" aria-labelledby="about-label" id="about">
-        <div class="mx-4 custom-container">
+      <div class="about" aria-labelledby="about-label" id="about-us"> <!-- id updated -->
+        <div class="custom-container">
           <div class="about-content">
-
             <p class="section-subtitle" id="about-label" style="font-size:xx-large;">About-Us</p>
             <h3>
               Kurma IT Services mission and passion
@@ -153,8 +153,19 @@
             </p>
           </div>
         </div>
-      </section>
+      </div>
 
+      <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+            });
+          });
+        });
+
+      </script>
       <!-- 
         - #SERVICE
       -->
@@ -568,20 +579,19 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <script>
-      let menuList = document.getElementById("menuList")
-      menuList.style.maxHeight = "0px";
+  <script>
+    let menuList = document.getElementById("menuList")
+    menuList.style.maxHeight = "0px";
 
-      function toggleMenu(){
-          if(menuList.style.maxHeight == "0px")
-          {
-              menuList.style.maxHeight = "300px";
-          }
-          else{
-              menuList.style.maxHeight = "0px";
-          }
+    function toggleMenu() {
+      if (menuList.style.maxHeight == "0px") {
+        menuList.style.maxHeight = "300px";
       }
-      
+      else {
+        menuList.style.maxHeight = "0px";
+      }
+    }
+
   </script>
 </body>
 

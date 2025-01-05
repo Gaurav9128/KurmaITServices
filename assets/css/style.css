@@ -773,6 +773,10 @@ form {
   padding-block-end: 20px;
 }
 
+#about-us {
+  scroll-margin-top: 100px; /* Adjust this value according to your navbar height */
+}
+
 /* General Button Styles */
 .btn {
   display: inline-block;
