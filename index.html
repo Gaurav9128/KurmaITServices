@@ -435,7 +435,7 @@
 
             <style>
               /* Modal styles */
-              .modal2 {
+              .modal {
                 display: none;
                 position: fixed;
                 z-index: 1;
@@ -447,28 +447,35 @@
                 background-color: rgba(0, 0, 0, 0.5);
               }
 
-              .modal2-content {
+              .modal-content {
                 background-color: #fefefe;
                 margin: 10% auto;
                 padding: 20px;
                 border: 1px solid #888;
-                width: 80%;
+                width: 90%;
+                /* Reduced width for better mobile responsiveness */
+                max-width: 500px;
+                /* Set a maximum width */
                 border-radius: 10px;
+                position: relative;
+                /* Relative positioning to position close button */
               }
 
               .clos {
                 color: #aaa;
-                float: right;
                 font-size: 28px;
                 font-weight: bold;
                 cursor: pointer;
+                position: absolute;
+                /* Absolute positioning for close button */
+                top: 10px;
+                right: 15px;
               }
 
               .clos:hover,
               .clos:focus {
                 color: black;
                 text-decoration: none;
-                cursor: pointer;
               }
             </style>
 
