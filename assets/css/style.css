@@ -464,7 +464,7 @@ nav ul li a{
 }
 
 .h1.hero-title {
-  font-size: 3rem; /* Adjust the size for the heading */
+  font-size: 5rem; /* Adjust the size for the heading */
   margin-bottom: 15px; /* Space below the title */
   color: #228df7;
 }
@@ -475,7 +475,7 @@ h2 {
 }
 
 .hero-text {
-  font-size: 4rem;
+  font-size: 8rem;
   color: bisque;
   margin-bottom: 30px; /* Adds space below the paragraph */
   text-align: center;
@@ -650,6 +650,42 @@ form {
   font-weight: normal; /* Optionally adjust the weight */
   margin-bottom: 20px; /* Add space below (optional) */
 }
+
+.OPT {
+  display: none; /* Hide by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Dimmed background */
+}
+
+.modal1-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
 
 /*-----------------------------------*\
   #ABOUT
@@ -1226,6 +1262,19 @@ footer a:hover {
   padding-inline: 24px;
   font-weight: var(--fw-700);
 }
+
+#footer-logo {
+  width: 100%; /* Logo ki width ko adjust kare */
+  max-width: 450px; /* Maximum width set kare */
+  margin-top: -5px; /* Top spacing */
+  margin-bottom: -10px; /* Bottom spacing */
+  position: relative;
+  top: 5px; /* Adjust logo position */
+  padding: 30px; /* Logo ke aas-paas padding de */
+  background-color: white; /* White background add kare */
+  border-radius: 10px; /* Corners ko thoda round kare */
+}
+
 
 /*-----------------------------------*\
   #MEDIA QUERIES
