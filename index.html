@@ -317,11 +317,17 @@
                   modal1.style.display = "none";
                 }
               });
+              // Close the modal when clicking anywhere outside the modal content
+              window.addEventListener("click", (e) => {
+                if (e.target === modal1) {
+                  modal1.style.display = "none";
+                }
+              });
             </script>
 
             <style>
               /* Modal styles */
-              .modal1 {
+              .modal {
                 display: none;
                 position: fixed;
                 z-index: 1;
@@ -333,28 +339,35 @@
                 background-color: rgba(0, 0, 0, 0.5);
               }
 
-              .modal1-content {
+              .modal-content {
                 background-color: #fefefe;
                 margin: 10% auto;
                 padding: 20px;
                 border: 1px solid #888;
-                width: 80%;
+                width: 90%;
+                /* Reduced width for better mobile responsiveness */
+                max-width: 500px;
+                /* Set a maximum width */
                 border-radius: 10px;
+                position: relative;
+                /* Relative positioning to position close button */
               }
 
-              .closes {
+              .clos {
                 color: #aaa;
-                float: right;
                 font-size: 28px;
                 font-weight: bold;
                 cursor: pointer;
+                position: absolute;
+                /* Absolute positioning for close button */
+                top: 10px;
+                right: 15px;
               }
 
-              .closes:hover,
-              .closes:focus {
+              .clos:hover,
+              .clos:focus {
                 color: black;
                 text-decoration: none;
-                cursor: pointer;
               }
             </style>
 
@@ -420,17 +433,18 @@
                 modal2.style.display = "block";
               });
 
-              // Close the modal
+              // Close the modal using the close button
               closeButton1.addEventListener("click", () => {
                 modal2.style.display = "none";
               });
 
-              // Close the modal when clicking outside of it
+              // Close the modal when clicking anywhere outside the modal content
               window.addEventListener("click", (e) => {
-                if (e.target === modal1) {
+                if (e.target === modal2) {
                   modal2.style.display = "none";
                 }
               });
+
             </script>
 
             <style>
@@ -556,6 +570,7 @@
                   modal3.style.display = "none";
                 }
               });
+
             </script>
 
             <style>
