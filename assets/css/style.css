@@ -1265,7 +1265,7 @@ footer a:hover {
 
 #footer-logo {
   width: 100%; /* Logo ki width ko adjust kare */
-  max-width: 450px; /* Maximum width set kare */
+  max-width: 350px; /* Maximum width set kare */
   margin-top: -5px; /* Top spacing */
   margin-bottom: -10px; /* Bottom spacing */
   position: relative;
